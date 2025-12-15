@@ -1,0 +1,12 @@
+[Unit]
+Description=Elchin Discord Bot
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/%h/Elchin_bot
+ExecStart=/%h/Elchin_bot/.venv/bin/python3 /%h/Elchin_bot/elchin_bot.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
